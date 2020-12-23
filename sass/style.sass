@@ -1,0 +1,205 @@
+@import vars
+@import fonts
+@import media
+
+body
+	font-family: $opensans
+
+.header
+	background-color: transparent
+	width: 100%
+	padding-top: 20px
+	padding-bottom: 20px
+	position: fixed
+	transition: $mt
+	z-index: 100
+	.logo
+		color: $main
+		display: flex
+		align-items: center
+		h1
+			font-weight: bold
+			font-size: 36px
+			color: $accent
+		.food-text
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+			margin-left: 15px
+	.menu
+		display: flex
+		align-items: center
+		justify-content: center
+		nav
+			.menu-list
+				list-style-type: none
+				padding: 0
+				margin: 0
+				.menu-item
+					display: inline
+					margin-right: 30px
+					a
+						color: $text
+						text-decoration: none
+						font-family: $raleway
+						font-size: 24px
+					&:last-child
+						margin: 0
+						a
+							@extend .button-var
+
+.active-header
+	background-color: $main
+	box-shadow: $shadow
+
+// Sidebar
+.sidebar
+	height: 100%
+	width: 0
+	position: fixed
+	z-index: 1
+	top: 0
+	left: 0
+	background-color: darken($main, 5%)
+	overflow-x: hidden
+	transition: 0.5s
+	padding-top: 60px
+	white-space: nowrap
+	a
+		padding: 8px 8px 8px 32px
+		text-decoration: none
+		font-size: 25px
+		color: $text
+		display: block
+		transition: 0.3s
+		&:hover
+			color: #f1f1f1
+	.closebtn
+		position: absolute
+		top: 0
+		right: 25px
+		font-size: 36px
+		margin-left: 50px
+
+.openbtn
+	font-size: 20px
+	cursor: pointer
+	background: $accent
+	color: white
+	padding: 10px 15px
+	border: none
+	&:hover
+		background-color: #444
+
+.menu-button
+	display: none
+	align-items: center !important
+	justify-content: center !important
+
+.main
+	width: 100%
+	height: 750px
+	background-image: url('img/background.jpg')
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	display: flex
+	align-items: center
+	justify-content: center
+	position: relative
+	&::before
+		content: ''
+		width: 100%
+		height: 100%
+		background-color: $main
+		opacity: 0.75
+		position: absolute
+		top: 0
+		bottom: 0
+	.main-text-block
+		text-align: center
+		h2
+			font-family: $raleway
+			font-size: 64px
+			margin-bottom: 20px
+		p
+			font-family: $raleway
+			font-size: 36px	
+			margin-bottom: 30px
+		a
+			@extend .button-var
+	.bottom-pic
+		@extend .bottom
+
+.description
+	width: 100%
+	min-height: 800px
+	padding-top: 150px
+	.description-text
+		h2
+			font-size: 48px
+			margin-bottom: 27px
+		p
+			font-size: 20px
+			margin-bottom: 40px
+		a
+			@extend .button-var
+	.preview
+		display: flex
+		justify-content: center
+
+.advantage-section
+	width: 100%
+	min-height: 555px
+	padding-top: 100px
+	padding-bottom: 100px
+	position: relative
+	.advantage
+		text-align: center
+		padding: 0 60px
+		h3
+			font-size: 24px
+			font-weight: bold
+		p
+			font-size: 18px
+		img
+			width: 150px
+			margin-bottom: 38px
+	.bottom-pic
+		@extend .bottom
+
+.subscribe-section
+	width: 100%
+	min-height: 250px
+	display: flex
+	justify-content: center
+	#mc_embed_signup
+		width: 550px
+		#mc-embedded-subscribe-form
+			padding: 0
+			#mc_embed_signup_scroll
+		label
+			text-align: center
+			font-size: 48px
+			font-family: $opensans
+			font-weight: 200
+			margin: 0
+			padding: 0
+			margin-bottom: 25px
+		#mce-EMAIL
+			width: 100%
+			display: inline-block
+		.button
+			height: 40px
+			margin: 25px auto
+			@extend .button-var
+
+.footer
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 100%
+	height: 88px
+	background: $accent
+	p
+		margin: 0
+		color: $main
+		font-size: 24px

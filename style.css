@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300&display=swap");
+html {
+  scroll-behavior: smooth; }
+
+.button-var, .header .menu nav .menu-list .menu-item:last-child a, .main .main-text-block a, .description .description-text a, .subscribe-section #mc_embed_signup .button {
+  color: #ffffff;
+  background: #4059AD;
+  border-radius: 20px;
+  padding: 6px 28px;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif; }
+
+.bottom, .main .bottom-pic, .advantage-section .bottom-pic {
+  width: 100%;
+  height: 98px;
+  background-image: url("img/bottom.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none !important; }
+
+  .menu-button {
+    display: flex !important; } }
+body {
+  font-family: "Open Sans", sans-serif; }
+
+.header {
+  background-color: transparent;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  transition: all 0.25s ease;
+  z-index: 100; }
+  .header .logo {
+    color: #ffffff;
+    display: flex;
+    align-items: center; }
+    .header .logo h1 {
+      font-weight: bold;
+      font-size: 36px;
+      color: #4059AD; }
+    .header .logo .food-text {
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin-left: 15px; }
+  .header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .header .menu nav .menu-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0; }
+      .header .menu nav .menu-list .menu-item {
+        display: inline;
+        margin-right: 30px; }
+        .header .menu nav .menu-list .menu-item a {
+          color: #000000;
+          text-decoration: none;
+          font-family: "Raleway", sans-serif;
+          font-size: 24px; }
+        .header .menu nav .menu-list .menu-item:last-child {
+          margin: 0; }
+
+.active-header {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  white-space: nowrap; }
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s; }
+    .sidebar a:hover {
+      color: #f1f1f1; }
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px; }
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background: #4059AD;
+  color: white;
+  padding: 10px 15px;
+  border: none; }
+  .openbtn:hover {
+    background-color: #444; }
+
+.menu-button {
+  display: none;
+  align-items: center !important;
+  justify-content: center !important; }
+
+.main {
+  width: 100%;
+  height: 750px;
+  background-image: url("img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+  .main::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    bottom: 0; }
+  .main .main-text-block {
+    text-align: center; }
+    .main .main-text-block h2 {
+      font-family: "Raleway", sans-serif;
+      font-size: 64px;
+      margin-bottom: 20px; }
+    .main .main-text-block p {
+      font-family: "Raleway", sans-serif;
+      font-size: 36px;
+      margin-bottom: 30px; }
+
+.description {
+  width: 100%;
+  min-height: 800px;
+  padding-top: 150px; }
+  .description .description-text h2 {
+    font-size: 48px;
+    margin-bottom: 27px; }
+  .description .description-text p {
+    font-size: 20px;
+    margin-bottom: 40px; }
+  .description .preview {
+    display: flex;
+    justify-content: center; }
+
+.advantage-section {
+  width: 100%;
+  min-height: 555px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative; }
+  .advantage-section .advantage {
+    text-align: center;
+    padding: 0 60px; }
+    .advantage-section .advantage h3 {
+      font-size: 24px;
+      font-weight: bold; }
+    .advantage-section .advantage p {
+      font-size: 18px; }
+    .advantage-section .advantage img {
+      width: 150px;
+      margin-bottom: 38px; }
+
+.subscribe-section {
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  justify-content: center; }
+  .subscribe-section #mc_embed_signup {
+    width: 550px; }
+    .subscribe-section #mc_embed_signup #mc-embedded-subscribe-form {
+      padding: 0; }
+    .subscribe-section #mc_embed_signup label {
+      text-align: center;
+      font-size: 48px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 200;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 25px; }
+    .subscribe-section #mc_embed_signup #mce-EMAIL {
+      width: 100%;
+      display: inline-block; }
+    .subscribe-section #mc_embed_signup .button {
+      height: 40px;
+      margin: 25px auto; }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 88px;
+  background: #4059AD; }
+  .footer p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 24px; }
+
+/*# sourceMappingURL=style.css.map */
